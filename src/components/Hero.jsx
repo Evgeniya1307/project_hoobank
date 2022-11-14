@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../style";
 import { discount, robot } from "../assets";
-
+import GetStarted from './GetStarted';
 //раздел героя
 const Hero = () => {
   return (
@@ -21,6 +21,17 @@ const Hero = () => {
           <span className="text-white"> 1 Month</span> Account
         </p>
           </div>
+          <div className="flex flex-row justify-between items-center w-full">
+          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leanding-[100px] leading-[75px]">The Next <br className="sm:block hidden"/> {" "}
+          <span className="text-gradient">Generation
+          </span> {" "}
+          Payment Method.
+          </h1>
+          <div className="ss:flex hidden md:mr-4  mr-0">
+          <GetStarted/>
+          </div>
+          </div>
+
       </div>
     </section>
   );
