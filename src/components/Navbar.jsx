@@ -26,21 +26,22 @@ const Navbar = () => {
     ))}
     </ul>
 
-    {/*для мобильных устройств*/}
+    {/*для мобильных устройств бургер*/}
 <div className="sm:hidden flex flex-1 justify-end items-center">
         <img
           src={toggle ? close : menu} //если переключатель включен показать значок иначе значок меню
           alt="menu"
           className="w-[28px] h-[28px] object-contain"
-          onClick={() => setToggle(!toggle)}
+          onClick={() => setToggle(!toggle)} //при щелчке 
         />
+
 
         <div
           className={`${
-            !toggle ? "hidden" : "flex"
+            !toggle ? "hidden" : "flex" //если перключатель включен то флекс контейнер если нет то скрыт
           } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
         >
-          <ul className="list-none flex justify-end items-start flex-1 flex-col">
+          <ul className="list-none flex justify-end items-start flex-1 flex-col"> {/*flex-col столбец */}
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
