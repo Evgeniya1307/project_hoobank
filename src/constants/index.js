@@ -71,6 +71,7 @@ export const feedback = [
   },
 ];
 
+//массив с 3 разными объектами и каждый имеет заголовок значение 
 export const stats = [
   {
     id: "stats-1",
