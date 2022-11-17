@@ -20,6 +20,8 @@ export const navLinks = [
   },
 ];
 
+
+//you do the business бизнес часть множество разных карт
 export const features = [
   {
     id: "feature-1",
