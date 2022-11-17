@@ -41,7 +41,7 @@ the money.</h2> {/*sm:block hidden -блок на малых устройств�
 </div>
 <div className={`${layout.section} flex-col`}>
 {features.map((feature, index) => ( //сопаставлю все фу-ииполучаю одну индивидуальную фу-ию и индекс каждой карты
-  <FeatureCard key={feature.id} {...feature} index={index} />
+  <FeatureCard key={feature.id} {...feature} index={index} />//мнногоразовый компонент функций карты  
 ))}
 </div>
 </section>
