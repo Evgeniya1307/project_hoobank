@@ -25,11 +25,11 @@ const Footer = () => (
             <ul className="list-none mt-4">
               {footerlink.links.map((link, index) => (//перебираю ссылку точечную карту ссылок и получу отдельную ссылку 
                 <li
-                  key={link.name}
+                  key={link.name}//равный имени ссылки
                   className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${
                     index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
                   }`}
-                >
+                >{/*если индекс не равен нижний колонтитул-1 даст последний,если не последний то отобразить нижнее поле из 4   */}
                   {link.name}
                 </li>
               ))}
@@ -45,7 +45,7 @@ const Footer = () => (
       </p>
 
       <div className="flex flex-row md:mt-0 mt-6">
-        {socialMedia.map((social, index) => (
+        {socialMedia.map((social, index) => (//получаю 1 соц сеть и индекс  и возвращаю для каждой соц сети 
           <img
             key={social.id}
             src={social.icon}
