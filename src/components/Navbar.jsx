@@ -17,11 +17,11 @@ const Navbar = () => {
       <li
         key={nav.id}
         className={`font-poppins font-normal cursor-pointer text-[16px] ${
-          active === nav.title ? "text-white" : "text-dimWhite" //какой сейчас активен
+          active === nav.title ? "text-white" : "text-dimWhite" //which one is currently active
         } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`} //если индекс равен navLinks.length -1 означает (последний элемент)даю маржинальную установку 0 в противном случае 10
         onClick={() => setActive(nav.title)}
       >
-        <a href={`#${nav.id}`}>{nav.title}</a>{/*перейти к конкретной  */}
+        <a href={`#${nav.id}`}>{nav.title}</a>
         </li>
     ))}
     </ul>
@@ -29,7 +29,7 @@ const Navbar = () => {
     {/*для мобильных устройств бургер*/}
 <div className="sm:hidden flex flex-1 justify-end items-center">
         <img
-          src={toggle ? close : menu} //если переключатель включен показать значок иначе значок меню
+          src={toggle ? close : menu} //if the switch is on show the icon otherwise the menu icon
           alt="menu"
           className="w-[28px] h-[28px] object-contain"
           onClick={() => setToggle(!toggle)} //on click
