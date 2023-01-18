@@ -32,13 +32,13 @@ const Navbar = () => {
           src={toggle ? close : menu} //если переключатель включен показать значок иначе значок меню
           alt="menu"
           className="w-[28px] h-[28px] object-contain"
-          onClick={() => setToggle(!toggle)} //при щелчке 
+          onClick={() => setToggle(!toggle)} //on click
         />
 
 
         <div
           className={`${
-            !toggle ? "hidden" : "flex" //если перключатель включен то флекс контейнер если нет то скрыт
+            !toggle ? "hidden" : "flex" //if the switch is on, then the flex container; if not, it is hidden
           } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
         >
           <ul className="list-none flex justify-end items-start flex-1 flex-col"> {/*flex-col столбец */}
