@@ -12,13 +12,13 @@ const Navbar = () => {
     <nav className="w-full flex py-6 justify-between items-center navbar">
     <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" />
     <ul className="list-none sm:flex hidden justify-end items-center flex-1">{/*будет скрыт это мобильная панель карты */}
-    {/*сопаставлю навигационные ссылки чтобы открывать блок кода ,mapом получу 1 навигационную ссылку и индекс и вернуть элемент списка и каждый элемент списска имеет ключ*/}
+   
     {navLinks.map((nav, index) => (
       <li
         key={nav.id}
         className={`font-poppins font-normal cursor-pointer text-[16px] ${
           active === nav.title ? "text-white" : "text-dimWhite" //which one is currently active
-        } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`} //если индекс равен navLinks.length -1 означает (последний элемент)даю маржинальную установку 0 в противном случае 10
+        } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`} //if index navLinks.length -1 means (last element) i set margin setting to 0 otherwise 10
         onClick={() => setActive(nav.title)}
       >
         <a href={`#${nav.id}`}>{nav.title}</a>
