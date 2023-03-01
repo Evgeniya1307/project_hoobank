@@ -50,7 +50,7 @@ const Hero = () => {
 <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
 {/* gradient end */}
       </div>
-      <div className={`ss:hidden ${styles.flexCenter}`}> {/*будет видимым на мобильном устройстве */}
+      <div className={`ss:hidden ${styles.flexCenter}`}> {/*will be visible on opposite images */}
       <GetStarted />
     </div>
   </section>
