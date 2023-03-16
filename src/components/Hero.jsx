@@ -9,7 +9,7 @@ const Hero = () => {
       id="home"
       className={`flex md:flex-row flex-col ${styles.paddingY}`}
     >
-      {/*id равный home чтобы прокручивать  */}
+      {/*id rare home scroll  */}
       <div
         className={`flex-1 ${styles.flexStart}
    flex-col xl:px-0 sm:px-16 px-6`}
